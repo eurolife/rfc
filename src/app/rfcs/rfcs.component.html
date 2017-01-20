@@ -1,0 +1,20 @@
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Due date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rfc of rfcs">
+        <td>
+          <a [routerLink]="['/rfc', rfc.Id]">{{rfc.Title}}</a>
+        </td>
+        <td>{{rfc.DueDate}}</td>
+        <td>{{rfc.Status}}</td>
+      </tr>
+    </tbody>
+  </table>
+

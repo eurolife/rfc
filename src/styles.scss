@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+$test: #000;
+
+body {
+    // color: green;
+    // h1 {
+    //     color: blue;
+    // }
+    h1 {
+        color: $test;
+    }
+}
