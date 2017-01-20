@@ -5,7 +5,7 @@ import { RFCsService } from '../models/rfcs.service'
 import { RFCSummary } from '../models/rfc-summary.model'
 
 @Component({
-  selector: 'app-rfcs',
+
   templateUrl: './rfcs.component.html',
   styleUrls: ['./rfcs.component.css']
 })

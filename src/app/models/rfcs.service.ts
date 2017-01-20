@@ -18,7 +18,7 @@ export class RFCsService {
   getRFCs(): Observable<RFCSummary[]> {
       return this.http.get(this.serviceUrl)
       .map((response: Response) => <RFCSummary[]>response.json())
-      .do(data => console.log('All: ' + JSON.stringify(data)))
+      //.do(data => console.log('All: ' + JSON.stringify(data)))
       .catch(this.handleError);
   }
   
@@ -26,8 +26,6 @@ export class RFCsService {
   getRFC(id: number): Observable<rfcMain> {
     return this.http.get(`${this.serviceUrl}/${id}`)
       .map((response: Response) => <rfcMain>response.json())
-      //.map((response: Response) => this.extractData(response))
-      .do(data => console.log('RFC: ' + JSON.stringify(data)))
       .catch(this.handleError);
     
     }
